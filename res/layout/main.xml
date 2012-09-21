@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    <RelativeLayout android:layout_marginTop="15px" android:layout_width="match_parent" 
+    				android:id="@+id/relativeLayout1" android:layout_height="wrap_content" 
+    				android:layout_weight="0.68">
+        <Button android:id="@+id/button1" android:layout_height="70dp" 
+        		android:layout_alignRight="@+id/textView1" android:background="@drawable/wtour" 
+        		android:layout_width="89dp" android:layout_alignParentTop="true"></Button>
+        <Button android:id="@+id/button2" android:layout_height="70dp" 
+        		android:layout_centerHorizontal="true" android:background="@drawable/mapsicon" 
+        		android:layout_width="89dp" android:layout_alignParentTop="true"></Button>
+        <Button android:id="@+id/button4" android:layout_height="70dp" 
+        		android:background="@drawable/videos" android:layout_below="@+id/textView1" 
+        		android:layout_marginTop="19dp" android:layout_width="89dp" 
+        		android:layout_alignLeft="@+id/textView1"></Button>
+        <Button android:id="@+id/button3" android:layout_height="70dp" 
+        		android:layout_toRightOf="@+id/button2" android:layout_alignBottom="@+id/button1" 
+        		android:background="@drawable/photos" android:layout_width="89dp"></Button>
+        <Button android:id="@+id/button5" android:layout_height="70dp" 
+        		android:layout_toRightOf="@+id/button4" android:layout_alignBottom="@+id/button4" 
+        		android:background="@drawable/contacts" android:layout_alignBaseline="@+id/button4" 
+        		android:layout_width="85dp"></Button>
+    
+        
+        <TextView android:layout_height="wrap_content" android:layout_centerHorizontal="true" 
+        		  android:text="Map" android:layout_width="wrap_content" android:id="@+id/TextView01" 
+        		  android:layout_above="@+id/button4"></TextView>
+        <TextView android:layout_height="wrap_content" android:layout_alignRight="@+id/button3" 
+        		  android:layout_alignBottom="@+id/TextView01" android:layout_marginRight="18dp" 
+        		  android:text="Photos" android:layout_alignBaseline="@+id/TextView01" 
+        		  android:layout_width="wrap_content" android:id="@+id/TextView02"></TextView>
+        <TextView android:layout_height="wrap_content" android:layout_alignRight="@+id/textView1" 
+        		  android:layout_marginRight="16dp" android:text="Videos" 
+        		  android:layout_below="@+id/button4" android:layout_width="wrap_content" 
+        		  android:id="@+id/TextView03"></TextView>
+        <TextView android:layout_height="wrap_content" android:layout_alignBottom="@+id/TextView03" 
+        		  android:text="Contacts" android:layout_alignBaseline="@+id/TextView03" 
+        		  android:layout_width="wrap_content" android:layout_alignLeft="@+id/button5" 
+        		  android:id="@+id/TextView04"></TextView>
+        <TextView android:layout_height="wrap_content" android:layout_marginRight="14dp" 
+        		  android:text="Walking Tour" android:layout_below="@+id/button1" 
+        		  android:layout_toLeftOf="@+id/button2" android:layout_width="wrap_content" 
+        		  android:id="@+id/textView1"></TextView>
+        </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.bgsu.tour"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"> </uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+    <uses-library android:name="com.google.android.maps" />
+        <activity android:name=".SplashScreenActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+    <activity android:name=".BGSUVirtualTourActivity"></activity> 
+    <activity android:name=".BeginWalkingTourActivity"></activity>     
+    <activity android:name=".BGSUVTour"></activity>
+    
+    <activity android:name=".MapDisplayStart"></activity>
+    
+    <activity android:name=".ImageListActivity"></activity>
+    <activity android:name=".ImageShowActivity"></activity>
+    
+    <activity android:name=".VideoListActivity"></activity>
+    <activity android:name=".ToPlayVideoActivity"></activity>
+    
+    <activity android:name=".ContactListActivity"></activity>
+    <activity android:name=".DisplayContact"></activity>
+    
+    </application>
+</manifest>
