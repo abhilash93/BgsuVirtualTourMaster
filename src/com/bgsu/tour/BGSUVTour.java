@@ -31,10 +31,6 @@ import android.widget.Toast;
 public class BGSUVTour extends MapActivity implements LocationListener 
 {
 
-	//private static final String TAG = "LocationActivity";
-	
-	
-
 	  LocationManager locationManager; 
 	  private LocationListener locationListener;
 	  Geocoder geocoder; 
